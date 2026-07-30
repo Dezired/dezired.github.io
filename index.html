@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Robotics &amp; Mechatronics</title>
+<meta name="description" content="Portfolio and CV of Your Name, M.Sc. student in Robotics and AI in Production.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- corner crop marks, purely decorative — echoes a technical drawing sheet -->
+<div class="sheet-marks" aria-hidden="true">
+  <span class="mark mark--tl"></span>
+  <span class="mark mark--tr"></span>
+  <span class="mark mark--bl"></span>
+  <span class="mark mark--br"></span>
+</div>
+
+<header class="site-header">
+  <a href="#top" class="brand">YN<span class="brand-dot">.</span></a>
+  <nav class="site-nav">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <p class="eyebrow">M.Sc. Robotics &amp; AI in Production</p>
+    <h1 class="hero-title">Your Name</h1>
+    <p class="hero-sub">
+      Mechatronics engineer building the link between mechanical systems,
+      control, and machine learning — from robot kinematics to
+      vision-guided automation on the production floor.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn--primary">View projects</a>
+      <a href="assets/cv/cv.pdf" class="btn btn--ghost" target="_blank" rel="noopener">Open CV (PDF)</a>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <p class="section-label">01 — About</p>
+    <div class="about-grid">
+      <p class="about-text">
+        I'm a mechatronics graduate currently finishing my M.Sc. in Robotics
+        and AI in Production. I like problems that cross the boundary
+        between hardware and software: getting a manipulator's kinematics
+        right, tuning a control loop, and then handing decisions over to a
+        model trained on real sensor data. I'm currently looking for a
+        graduate role in robotics, automation, or applied AI.
+      </p>
+      <ul class="skill-list">
+        <li><span class="skill-cat">Languages</span>Python · C/C++ · MATLAB</li>
+        <li><span class="skill-cat">Robotics</span>ROS / ROS 2 · Kinematics · SLAM</li>
+        <li><span class="skill-cat">ML / CV</span>PyTorch · OpenCV</li>
+        <li><span class="skill-cat">Hardware</span>PLC · Microcontrollers · CAD</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <p class="section-label">02 — Projects</p>
+    <div class="project-filters" id="project-filters"></div>
+    <div class="project-grid" id="project-grid">
+      <!-- injected by js/main.js from the PROJECTS array -->
+    </div>
+  </section>
+
+  <!-- ============ CV ============ -->
+  <section id="cv" class="section">
+    <p class="section-label">03 — CV</p>
+    <div class="cv-panel">
+      <div class="cv-info">
+        <h2>Curriculum Vitae</h2>
+        <p>
+          Built with Typst and rebuilt automatically on every change —
+          <a href="assets/cv/cv.typ">view the source</a>.
+        </p>
+        <a href="assets/cv/cv.pdf" class="btn btn--primary" download>Download PDF</a>
+      </div>
+      <div class="cv-embed">
+        <embed src="assets/cv/cv.pdf" type="application/pdf" title="CV preview">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section section--contact">
+    <p class="section-label">04 — Contact</p>
+    <h2 class="contact-title">Let's talk.</h2>
+    <div class="contact-links">
+      <a href="mailto:your.email@example.com">your.email@example.com</a>
+      <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/yourname" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span>Your Name — Mechatronics · Robotics · AI in Production</span>
+  <span>Built with plain HTML/CSS/JS, hosted on GitHub Pages</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
