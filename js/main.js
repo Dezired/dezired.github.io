@@ -46,10 +46,10 @@ const PROJECTS = [
     title: "Object sorting",
     category: "AI",
     summary: "Size-based sorting of screws, nails, and dowels using computer vision and selfmade dataset",
-    media: { type: "image", src: "assets/projects/defect-detection.jpg" },
+    media: { type: "image", src: "assets/projects/sorting/sortingExample.png" },
     links: [
-      { label: "GitHub", href: "#" },
-      { label: "Report", href: "#" },
+      { label: "Dataset", href: "https://app.roboflow.com/vdki-projekt/ki-projekt-s35p5/models" }
+      // { label: "Report", href: "#" },
     ],
   },
 ];
