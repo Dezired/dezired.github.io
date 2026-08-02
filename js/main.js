@@ -19,7 +19,7 @@ const PROJECTS = [
     media: { type: "image", src: "assets/projects/rittersport/robotRittersport.png" },
     links: [
       { label: "Details", href: "assets/projects/rittersport/rittersportDetails.html" },
-      { label: "Demo video", href: "assets/projects/rittersport/rittersport_new_audio.mp4#" },
+      { label: "Demo video", href: "https://youtu.be/1Ry15GMkm0E" },
     ],
   },
   {
@@ -39,7 +39,7 @@ const PROJECTS = [
     media: { type: "image", src: "assets/projects/robotArm/robotArm.png", },
     links: [
       { label: "Motion Controller", href: "assets/projects/robotArm/motionController.jpg"},
-      { label: "Demo Video", href: "assets/projects/robotArm/robotArm.mp4" }
+      { label: "Demo Video", href: "https://youtu.be/o4Wnqkcbrxw" }
     ],
   },
   {
