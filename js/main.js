@@ -52,6 +52,40 @@ const PROJECTS = [
       // { label: "Report", href: "#" },
     ],
   },
+  {
+    title: "Immersion Cooling",
+    category: "Test Bench",
+    summary: "Development of a test bench for immersion cooling of electronic components including 3D printed housing.",
+    media: { type: "image", src: "assets/projects/immersionCooling/immersionCooling.jpeg" },
+    links:[
+      {label: "APL post", href: "https://www.linkedin.com/posts/apl-automobil-prueftechnik_ai-datacenters-liquidcooling-activity-7473282528775393280-Woa5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEJMxRMBiaj5UqKTuC2yu0XhpVpnzcpAbLo"},
+      {label: "Close-up", href: "assets/projects/immersionCooling/immersionCooling2.jpeg"}
+    ]
+  },
+  {
+    title: "BMS Interface",
+    category: "Bachelor Thesis",
+    summary: "Bachelor thesis on Design and Development of Test Hardware for Battery Management System Validation and Calibration.",
+    media: { type: "image", src: "assets/projects/bachelorThesis/MMS_LED_Frontal_DSC_5209.png" },
+    links: [
+      { label: "SOTA Thesis", href: "assets/projects/bachelorThesis/sota_BachelorThesis.pdf" },
+      {label: "HW-Overview", href: "assets/projects/bachelorThesis/HWOverview.pdf"},
+      {label: "GUI", href: "assets/projects/bachelorThesis/MMS_GUI.png"},
+      {label: "BMS Back", href: "assets/projects/bachelorThesis/MMS_Buchsen_Frontal_DSC_5209.png"},
+    ]
+  },
+  {
+    title: "EdgeAI Tracking",
+    category: "Master Thesis",
+    summary: "Pose Estimation and Tracking of Objects in an Industrial Environment",
+    media: { type: "image", src: "assets/projects/masterThesis/blackbox.svg" },
+    links: [
+      { label: "SOTA Thesis", href: "assets/projects/masterThesis/sota_MasterThesis.pdf" },
+      {label: "Framework", href: "assets/projects/masterThesis/framework.pdf"},
+      {label: "Demo", href: "assets/projects/masterThesis/realWorldTest.pdf"},
+      {label: "Hardware", href: "assets/projects/masterThesis/HWOverview.pdf"},
+    ]
+  }
 ];
 
 function mediaMarkup(media, title) {
@@ -62,6 +96,19 @@ function mediaMarkup(media, title) {
         <source src="${media.src}" type="video/mp4">
       </video>
       <div class="media-placeholder" data-fallback>Add ${media.src} to show this video</div>
+    `;
+  }
+
+  if (media.type === "pdf") {
+    return `
+      <div class="pdf-container">
+        <iframe 
+          src="${media.src}#toolbar=0&navpanes=0"
+          class="pdf-preview"
+          title="${title}">
+        </iframe>
+      </div>
+      <div class="media-placeholder" data-fallback>Add ${media.src} to show this PDF</div>
     `;
   }
   return `
